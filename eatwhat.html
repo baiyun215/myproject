@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>吃什么？（网页版）</title>
+    <style>
+        button {
+            background-color: #4CAF50; /* Green */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <button onclick="eat()">吃什么？</button>
+
+    </div>
+</body>
+</html>
+<script type="text/javascript">
+    function eat() {
+        var m1 = new Array();
+        m1[0] = "荷叶蒸饭";
+        m1[1] = "五谷渔粉";
+        m1[2] = "福泉美食坊";
+        m1[3] = "老地方";
+        m1[4] = "随便";
+        var n = Math.floor(Math.random() * 5);
+        alert(m1[n]);
+    }
+</script>
